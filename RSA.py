@@ -66,6 +66,6 @@ def main():
 
     # Decrypt the message
     decrypted_message = rsa_decrypt(encrypted_message, d, n)
-    print("Decrypted Message: ", decrypted_message)
+    print("Decrypted Message:", decrypted_message)
 
 main()
