@@ -9,7 +9,7 @@ def find_e(phi_n):
     for e in range(2, phi_n):
         if gcd(e, phi_n) == 1:
             return e
-    raise ValueError("No suitable 'e' found.")
+    print("No suitable 'e' found.")
 
 def modular_inverse(e, phi_n):
     t, new_t = 0, 1
@@ -19,7 +19,7 @@ def modular_inverse(e, phi_n):
         t, new_t = new_t, t - quotient * new_t
         r, new_r = new_r, r - quotient * new_r
     if r > 1:
-        raise ValueError("e is not invertible")
+        print("e is not invertible")
     if t < 0:
         t += phi_n
     return t

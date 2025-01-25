@@ -5,12 +5,12 @@ def mod_inverse(a, m):
     for x in range(1, m):
         if (a * x) % m == 1:
             return x
-    raise ValueError("Modular inverse does not exist.")
+    print("Modular inverse does not exist.")
 
 
 def affine_encrypt(text, a, b):
     if gcd(a, 26) != 1:
-        raise ValueError("Key 'a' must be coprime with 26.")
+        print("Key 'a' must be coprime with 26.")
     
     encrypted_text = ""
     for char in text:
@@ -26,7 +26,7 @@ def affine_encrypt(text, a, b):
 
 def affine_decrypt(ciphertext, a, b):
     if gcd(a, 26) != 1:
-        raise ValueError("Key 'a' must be coprime with 26.")
+        print("Key 'a' must be coprime with 26.")
     
     decrypted_text = ""
     a_inverse = mod_inverse(a, 26) 
