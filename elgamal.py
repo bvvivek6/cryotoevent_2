@@ -58,3 +58,14 @@ if __name__ == "__main__":
     # Decrypt the ciphertext
     decrypted_number = elgamal_decrypt(c1, c2, d, p)
     print(f"Decrypted: {decrypted_number}")
+
+
+'''
+Enter a large prime number (p): 37
+Enter the base (e1): 2
+Enter the private key (d): 3
+Enter the numeric plaintext to encrypt: 32
+Ciphertext: (c1=11, c2=5)
+Decrypted: 32
+
+'''

@@ -62,4 +62,11 @@ def main():
 
 main()
 
-    
+'''
+Ouput
+Enter the plaintext: vivek
+Randomly generated keys: a = {a}, b = {b}
+Encrypted text: GTGJL
+Decrypted text: VIVEK
+
+'''

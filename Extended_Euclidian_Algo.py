@@ -23,3 +23,10 @@ def main():
 
 main()
         
+'''
+Enter the first number: 22
+Enter the second number: 23
+gcd(22, 23) = 1
+Coefficients: x = -1, y = 1
+
+'''

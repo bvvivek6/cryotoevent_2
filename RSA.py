@@ -69,3 +69,15 @@ def main():
     print("Decrypted Message:", decrypted_message)
 
 main()
+
+'''
+RSA Encryption and Decryption
+Enter a prime number p: 37
+Enter a prime number q: 31
+Public Key: (e=7, n=1147)
+Private Key: (d=463, n=1147)
+Enter the message to encrypt: vivek
+Encrypted Message: [552, 117, 552, 64, 81]
+Decrypted Message: vivek
+
+'''
